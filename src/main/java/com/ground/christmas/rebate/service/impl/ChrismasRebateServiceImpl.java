@@ -33,6 +33,7 @@ public class ChrismasRebateServiceImpl implements ChristmasRebateService {
     @Value("${user.recharge-url}")
     private String rechargeUrl;
 
+
     private RestTemplate restTemplate;
 
     public ChrismasRebateServiceImpl(RestTemplateBuilder builder) {
@@ -57,7 +58,7 @@ public class ChrismasRebateServiceImpl implements ChristmasRebateService {
                             .orderId(String.valueOf(info.getOrderId()))
                             .money(info.getReturnAmount())
                             .phoneNum(info.getPhoneNum())
-                            //.phoneNum("13848131779") // 测试用
+                            .phoneNum("13848131779") // 测试用
                             .rechargeReasonId(6)
                             .rechargeTypeId(2)
                             .remark("圣诞节活动返现")
@@ -78,8 +79,6 @@ public class ChrismasRebateServiceImpl implements ChristmasRebateService {
                     }
                 })
                 .filter(Objects::nonNull).collect(Collectors.toList());
-
-
         // List<Long> ids = list.stream().mapToLong(RebateInfo::getUserId).boxed().collect(Collectors.toList());
 
         log.info("发奖完毕，需要发送短信的用户：{}", uids);
