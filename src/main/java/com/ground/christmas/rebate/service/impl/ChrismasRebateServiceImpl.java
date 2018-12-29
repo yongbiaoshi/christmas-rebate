@@ -58,7 +58,6 @@ public class ChrismasRebateServiceImpl implements ChristmasRebateService {
                             .orderId(String.valueOf(info.getOrderId()))
                             .money(info.getReturnAmount())
                             .phoneNum(info.getPhoneNum())
-                            .phoneNum("13848131779") // 测试用
                             .rechargeReasonId(6)
                             .rechargeTypeId(2)
                             .remark("圣诞节活动返现")
