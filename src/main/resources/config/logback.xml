@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
 
-    <property name="APP_Name" value="chrismas-rebate"/>
+    <property name="APP_Name" value="christmas-rebate"/>
     <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
     <contextName>${APP_Name}</contextName>
     <property name="charset" value="UTF-8"/>
