@@ -34,6 +34,6 @@ user:
   recharge-url: https://user-terminal-test.mydadao.com/oms/user/rechargeByMobile
 dingtalk:
   robot:
-    christmas-url: https://oapi.dingtalk.com/robot/send?access_token=88962811920737eeb4f429a00cf32b69965f1afd6404ac5a2c52f52cf5241847
+    christmas-url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxxxxxxxxxxxxxx
 rebate:
   cron: 0 0 18 * * *
